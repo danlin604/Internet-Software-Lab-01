@@ -15,6 +15,7 @@ and open the template in the editor.
 
         $students = array();
         
+        # Added Student John
         $first = new Student();
         $first->surname = "Doe";
         $first->first_name = "John";
@@ -25,6 +26,7 @@ and open the template in the editor.
         $first->add_grade(55);
         $students['j123'] = $first;
         
+        # Added Student Albert
         $second = new Student();
         $second->surname = "Einstein";
         $second->first_name = "Albert";
@@ -35,6 +37,17 @@ and open the template in the editor.
         $second->add_grade(80);
         $second->add_grade(50);
         $students['a456'] = $second;
+        
+        # Added Student Daniel
+        $third = new Student();
+        $third->surname = "Lin";
+        $third->first_name = "Daniel";
+        $third->add_email('home','dlin@gmail.com');
+        $third->add_email('work','dlin@work.ca');
+        $third->add_grade(40);
+        $third->add_grade(45);
+        $third->add_grade(65);
+        $students['c789'] = $third;
         
         ksort($students);	// one of the many sort functions
 
